@@ -1,6 +1,8 @@
 # [simple_pin]()
 A simple gem for creating customers and charges using pin-payments [pin.net.au API](https://pin.net.au/)
 
+[![Gem Version](https://badge.fury.io/rb/simple_pin.svg)](https://badge.fury.io/rb/simple_pin)
+
 based on [dNitza's](https://github.com/dNitza) [pin_up](https://github.com/dNitza/pin_up)
 
 ## Install
