@@ -33,8 +33,6 @@ Pass in your PIN Secret Id and the environment (:live or :test). The default is 
 
 ```rb
 card_details = {number: "4200000000000000", expiry_month: "12", expiry_year: "2020", cvc: "123", name: "Roland Robot", address_line1: "123 Fake Road", address_line2: "", address_city: "Melbourne", address_postcode: "1223", address_state: "Vic", address_country: "AU"}
-
-# create a card in Pin and get the token
 card_response = pin.create_card(card_details)
 ```
 
@@ -46,9 +44,7 @@ Will return a card_token that can be stored against a customer.
 
 ```rb
 card_token = card_response['token']
-
 charge = {email: "email@example.com", description: "Description", amount: "400", currency: "AUD", ip_address: "127.0.0.1", card_token: card_token   }
-
 pin.create_charge(charge)
 ```
 
@@ -60,7 +56,6 @@ Created a charge with a given card token and charge details
 
 ```rb
 card_details = {number: "5520000000000000", expiry_month: "12", expiry_year: "2018", cvc: "123", name: "Roland TestRobot", address_line1: "123 Fake Road", address_line2: "", address_city: "Melbourne", address_postcode: "1223", address_state: "Vic", address_country: "AU"}
-
 card = Pin::Card.create(card_details)
 Pin::Customer.create('email@example.com',card['token'])
 ```
@@ -79,7 +74,6 @@ Charge the customer, Could be a recurring payment with a cron task using the sto
 
 ```rb
 charge = {email: "email@example.com", description: "Description", amount: "400", currency: "AUD", ip_address: "127.0.0.1", customer_token: customer['token']   }
-
 pin.create_charge(charge)
 ```
 
