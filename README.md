@@ -9,8 +9,6 @@ based on [dNitza's](https://github.com/dNitza) [pin_up](https://github.com/dNitz
 
 `gem install simple_pin`
 
-or add `gem 'pin_up'` to your Gemfile.
-
 ## API
 
 simple_pin provides a simple wrapper around pin's 3 main endpoints:
