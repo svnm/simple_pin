@@ -1,3 +1,4 @@
+require "simple_pin/version"
 require 'httparty'
 
 module SimplePin
