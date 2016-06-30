@@ -1,11 +1,7 @@
-## License
+# [simple_pin]()
+A simple gem for creating customers and charges using pin-payments [pin.net.au API](https://pin.net.au/)
 
-[MIT](http://isekivacenz.mit-license.org/)
-
-# simple_pin
-A simple gem for creating customers and charges using pin-payments (pin.net.au) API
-
-based on [dNitza's](https://github.com/dNitza) [pin_up](https://github.com/dNitza/pin_up) library
+based on [dNitza's](https://github.com/dNitza) [pin_up](https://github.com/dNitza/pin_up)
 
 ## Install
 
@@ -150,3 +146,7 @@ Returns an error object with a `response` attribute. The response is the raw res
         pin.create_charge(charge)
       end
     end
+
+## License
+
+[MIT](http://isekivacenz.mit-license.org/)
